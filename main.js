@@ -24,7 +24,7 @@ function check(i1, i2, i3) {
             setTimeout(() => {location.reload()}, 1500)
         }
     } 
-    if (btns[1] != "" && btns[2] != "" && btns[3] != "" && btns[4] != "" && btns[5] != "" && btns[6] != "" && btns[7] != "" && btns[8] != "" && btns[9] != "") {
+    if (btns[1] != "" && btns[2] != "" && btns[3] != "" && btns[4] != "" && btns[5] != "" && btns[6] != "" && btns[7] != "" && btns[8] != "" && btns[9] != "" && btns[i1] != btns[i2] && btns[i2] != btns[i3]) {
         title.innerHTML = "Drawn."
         setTimeout(() => title.innerHTML = `Drawn..`, 500)
         setTimeout(() => title.innerHTML = `Drawn...`, 1000)

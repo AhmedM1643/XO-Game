@@ -3,6 +3,7 @@ let turn = "X";
 let btns = [];
 let usable = true;
 let title = document.querySelector(".title")
+let btns2 = [];
 
 function check(i1, i2, i3) {
     for (let i = 1; i < 10; i++) {
@@ -22,6 +23,10 @@ function check(i1, i2, i3) {
             setTimeout(() => title.innerHTML = `Player O is the winner..`, 500)
             setTimeout(() => title.innerHTML = `Player O is the winner...`, 1000)
             setTimeout(() => {location.reload()}, 1500)
+        }
+        for (let i = 1; i < 10; i++) {
+            btns2[i] = document.getElementById(`item-${i}`)
+            btns2[i].removeAttribute("onclick")
         }
     } 
     if (btns[1] != "" && btns[2] != "" && btns[3] != "" && btns[4] != "" && btns[5] != "" && btns[6] != "" && btns[7] != "" && btns[8] != "" && btns[9] != "" && btns[i1] != btns[i2] && btns[i2] != btns[i3]) {
